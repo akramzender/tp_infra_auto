@@ -1,0 +1,17 @@
+# Generated files
+generated/
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

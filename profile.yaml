@@ -1,0 +1,27 @@
+profile:
+  name: debug-ubuntu
+  version: "1.0"
+
+os:
+  distro: ubuntu
+  version: "22.04"
+
+packages:
+  - curl
+  - jq
+  - git
+
+network:
+  default_deny_ingress: true
+  default_deny_egress: true
+  rules:
+    - direction: ingress
+      protocol: TCP
+      port: 80
+      from:
+        namespace: ingress-nginx
+    - direction: egress
+      protocol: UDP
+      port: 53
+      to:
+        namespace: kube-system
