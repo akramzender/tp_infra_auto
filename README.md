@@ -38,7 +38,6 @@ Le script va :
 7. ✅ Deployer avec Helm
 8. ✅ Verifier le deploiement
 
-**Duree totale : 2-3 minutes**
 
 ---
 

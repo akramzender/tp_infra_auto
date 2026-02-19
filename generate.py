@@ -58,9 +58,11 @@ def generate_helm(profile):
     image_tag = f"{distro}-{name}-v{prof_ver}"
 
     # Create chart directories
+    
     os.makedirs("generated/helm/templates", exist_ok=True)
 
     # Chart.yaml
+
     chart_yaml = f"""apiVersion: v2
 name: {name}
 description: Auto-generated chart for profile {name}
