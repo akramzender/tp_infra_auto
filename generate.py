@@ -74,7 +74,7 @@ appVersion: "{prof_ver}"
         f.write(chart_yaml)
     print("[OK] Chart.yaml generated")
 
-    # values.yaml
+    
     values_yaml = f"""replicaCount: 1
 
 image:
@@ -95,7 +95,7 @@ app:
         f.write(values_yaml)
     print("[OK] values.yaml generated")
 
-    # templates/namespace.yaml
+    
     namespace_yaml = f"""apiVersion: v1
 kind: Namespace
 metadata:
@@ -105,7 +105,7 @@ metadata:
         f.write(namespace_yaml)
     print("[OK] namespace.yaml generated")
 
-    # templates/deployment.yaml
+    
     deployment_yaml = """apiVersion: apps/v1
 kind: Deployment
 metadata:
